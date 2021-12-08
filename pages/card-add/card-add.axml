@@ -1,0 +1,73 @@
+<!-- <form>
+  <view class="f-body m-16">
+    <view class="title">Card Name</view>
+       <input 
+        placeholder="Netflix, Spotify, etc." 
+        class="mb-16"
+        onBlur="onInputName"
+        value={{value}}
+      />
+
+    <view class="title">Amount Limit (RM)</view>
+      <input 
+        placeholder="50.00" 
+        class="mb-16"
+        type="digit"
+        onBlur="onInputAmount"
+        value={{value}}
+        >
+        <view slot="iconInnerLeft">RM</view>
+      </input>
+  </view>
+
+  <view>
+    section: {{section}}
+  </view>
+
+  <view>
+    name: {{name}}
+  </view>
+
+  <view>
+    amount: {{amount}}
+  </view>
+
+  <view class="btn-area">
+    <f-btn onTap="onConfirm">Submit</f-btn>
+  </view>
+</form> -->
+
+<view class="f-body m-16">
+  <f-input 
+    placeholder="Netflix, Spotify, etc." 
+    label="Card Name"
+    inputType="text-field-amount"
+    class="mb-16"
+    onInput="onInputName"
+    value={{name}}
+  />
+
+  <f-input 
+    placeholder="50.00" 
+    label="Amount"
+    type="number"
+    inputType="text-field-amount"
+    onInput="onInputAmount"
+    value={{amount}}
+  >
+    <view slot="iconInnerLeft">RM</view>
+  </f-input>
+  
+  <f-divider/>
+  <f-cell class="p-16">
+    <f-cell-content>
+      <f-cell-label>
+        Card Number: {{card_number}}
+      </f-cell-label>
+    </f-cell-content>
+  </f-cell>
+
+  <f-btn onTap="onConfirm">
+    Confirm
+  </f-btn>
+</view>

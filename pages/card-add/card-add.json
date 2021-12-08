@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "f-btn": "/components/fiat/f-btn/f-btn",
+    "f-cell": "/components/fiat/f-cell/f-cell",
+    "f-cell-content": "/components/fiat/f-cell-content/f-cell-content",
+    "f-cell-label": "/components/fiat/f-cell-label/f-cell-label",
+    "f-divider": "/components/fiat/f-divider/f-divider",
+    "f-input": "/components/fiat/f-input/f-input",
+    "f-toast": "/components/fiat/f-toast/f-toast"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "f-btn": "/components/fiat/f-btn/f-btn",
+    "f-input": "/components/fiat/f-input/f-input",
+    "f-toast": "/components/fiat/f-toast/f-toast",
+    "card-list": "/components/card-list/card-list",
+    "provider-list": "/components/provider-list/provider-list"
+  }
+}

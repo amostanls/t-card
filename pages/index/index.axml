@@ -1,0 +1,17 @@
+<view class="f-body">
+  <f-input placeholder="Search your card" class="p-16" onInput="onSearchInput">
+    <image src="/components/fiat/assets/search.svg" slot="iconInnerLeft"/>
+  </f-input>
+
+  <card-list
+    cards="{{ cardsSearchResult }}"
+    isSearch="{{ isSearch }}"
+  />
+
+  <!-- <provider-list 
+    providers="{{ cardsSearchResult }}" 
+    isSearch="{{ isSearch }}"
+  /> -->
+
+  <f-btn class="bottom" onTap="onAddCard">Add Card</f-btn>
+</view>
