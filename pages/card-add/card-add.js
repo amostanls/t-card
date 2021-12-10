@@ -1,14 +1,8 @@
 const app=getApp();
 
-let start = 1;
-
-function generate(){
-  return 4200123498760000+start++;
-}
-
 Page({
   data: {
-    card_number: generate(),
+    card_number: 4200123498760000,
   },
 
   onInputAmount(e) {
@@ -26,30 +20,25 @@ Page({
 
   onConfirm: function(e) {
     my.confirm({
-      title: 'Add Card Details',
+      title: 'Add Card',
       content: '',
       confirmButtonText: 'Confirm',
       cancelButtonText: 'Cancel',
       success: (result) => {
-        app.cards = app.cards.concat(
-          [
-            {
-              "section": this.section,
-              "name": this.name,
-              "amount": this.amount,
-            }
-          ],
-        );
+        // addMe(e);
         my.showToast({
           type: 'success',
           content: 'Success',
-          duration: 3000,
+          duration: 1000,
         });
         my.navigateBack();
       },
-    fail: (result)=>{
-      
-    }
     });
   },  
+
+  methods:{
+    addMe(e){
+      this.setData({card_number: card_number+1});
+    },
+  },
 });

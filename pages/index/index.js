@@ -1,12 +1,8 @@
-// import providers from '/data/providers'
-// import cards from '/data/cards'
+// import cards from '/components/card-list/card-list'
 const app = getApp();
 
 Page({
   data: {
-    // providers,
-    // providersSearchResult: [],
-    // cards,
     cardsSearchResult:[],
     isSearch: false
   },

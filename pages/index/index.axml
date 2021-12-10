@@ -12,6 +12,5 @@
     providers="{{ cardsSearchResult }}" 
     isSearch="{{ isSearch }}"
   /> -->
-
-  <f-btn class="bottom" onTap="onAddCard">Add Card</f-btn>
 </view>
+<f-btn class="f-btn-bottom" onTap="onAddCard">Add Card</f-btn>

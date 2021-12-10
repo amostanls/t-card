@@ -1,6 +1,6 @@
 <image class="banner" mode="widthFix" src="https://a.m.dana.id/resource/imgs/miniprogram/img-banner-default.svg"/>
 <view class="pl-16 pr-16 pb-16">
-  <card-name class="mt-8 mb-12" cardName="{{ providerName }}"/>
+  <card-name class="mt-8 mb-12" cardName="{{ cardName }}"/>
 
   <!-- <customer-number-input 
     onInput="onCustomerNumberInput" 
@@ -12,6 +12,9 @@
 
   <card-amount class="mt-8 mb-12" providerName="{{ amount }}"/>
   <card-number class="mt-8 mb-12" providerName="{{ card_number }}"/>
+  <card-ccv class="mt-8 mb-12" providerName="{{ card_ccv }}"/>
+  <card-expiry class="mt-8 mb-12" providerName="{{ card_exp }}"/>
+  
 
 
 

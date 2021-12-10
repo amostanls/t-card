@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/provider-select/provider-select",
     "pages/card-add/card-add",
+    "pages/card-select/card-select",
     
     "pages/fiat/button/button",
     "pages/fiat/cell/cell",
@@ -13,7 +14,7 @@
     "pages/fiat/sheet/sheet"
   ],
   "window": {
-    "defaultTitle": "Virtual Card",
+    "defaultTitle": "T-Card",
     "titleBarColor": "#108EE9"
   }
 }

@@ -2,6 +2,8 @@
   "usingComponents": {
     "provider-name": "/components/provider-name/provider-name",
     "card-amount": "/components/card-amount/card-amount",
+    "card-ccv": "/components/card-ccv/card-ccv",
+    "card-expiry": "/components/card-expiry/card-expiry",
     "card-name": "/components/card-name/card-name",
     "card-number": "/components/card-number/card-number",
     "freeze-subscription": "/components/freeze-subscription/freeze-subscription",

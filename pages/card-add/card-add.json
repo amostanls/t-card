@@ -6,6 +6,7 @@
     "f-cell-label": "/components/fiat/f-cell-label/f-cell-label",
     "f-divider": "/components/fiat/f-divider/f-divider",
     "f-input": "/components/fiat/f-input/f-input",
-    "f-toast": "/components/fiat/f-toast/f-toast"
+    "f-toast": "/components/fiat/f-toast/f-toast",
+    "num-input": "/components/customer-number-input/customer-number-input"
   }
 }

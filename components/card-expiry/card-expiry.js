@@ -2,7 +2,7 @@ Component({
   mixins: [],
   data: {},
   props: {
-    title: "Card Name",
+    title: "Expiry Date",
     providerName: "Provider Name",
   },
   didMount() {},

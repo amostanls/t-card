@@ -1,59 +1,82 @@
-<!-- <form>
-  <view class="f-body m-16">
-    <view class="title">Card Name</view>
-       <input 
-        placeholder="Netflix, Spotify, etc." 
-        class="mb-16"
-        onBlur="onInputName"
-        value={{value}}
-      />
+<image class="banner" mode="widthFix" src="https://a.m.dana.id/resource/imgs/miniprogram/img-banner-default.svg"/>
+<!-- <view class="f-body m-16">Card Name</view>
 
-    <view class="title">Amount Limit (RM)</view>
-      <input 
-        placeholder="50.00" 
-        class="mb-16"
-        type="digit"
-        onBlur="onInputAmount"
-        value={{value}}
-        >
-        <view slot="iconInnerLeft">RM</view>
-      </input>
-  </view>
+<view class="input-container">
+  <input 
+    placeholder="Netflix, Spotify, etc." 
+    onInput="onInputName"
+    value={{value}}
+  />
+</view>
 
-  <view>
-    section: {{section}}
-  </view>
+<view class="title">Amount Limit (RM)</view>
 
-  <view>
-    name: {{name}}
-  </view>
+<view class="input-container">
+  <input 
+    placeholder="50.00" 
+    type="digit"
+    onInput="onInputAmount"
+    value={{value}}
+    >
+    <view slot="iconInnerLeft">RM</view>
+  </input>
+</view>
 
-  <view>
-    amount: {{amount}}
-  </view>
+<view class="title">Password</view>
 
-  <view class="btn-area">
-    <f-btn onTap="onConfirm">Submit</f-btn>
-  </view>
-</form> -->
+<view class="input-container">
+  <input password
+    placeholder="password" 
+    onInput="onInputPassword"
+    value={{value}}
+    >
+    <view slot="iconInnerLeft">RM</view>
+  </input>
+</view>
+
+<view>
+  section: {{section}}
+</view>
+
+<view>
+  name: {{name}}
+</view>
+
+<view>
+  amount: {{amount}}
+</view>
+
+<view>
+  password: {{password}}
+</view>
+<f-btn onTap="onConfirm">Submit</f-btn> -->
 
 <view class="f-body m-16">
   <f-input 
-    placeholder="Netflix, Spotify, etc." 
+    placeholder="Spotify Premium" 
     label="Card Name"
     inputType="text-field-amount"
     class="mb-16"
     onInput="onInputName"
-    value={{name}}
+    value={{value}}
   />
+
+  <!-- <f-input 
+    placeholder="Password"
+    label="Password"
+    inputType="text-field-amount"
+    class="mb-16"
+  >
+  </f-input> -->
 
   <f-input 
     placeholder="50.00" 
     label="Amount"
     type="number"
     inputType="text-field-amount"
+    class="mb-16"
     onInput="onInputAmount"
-    value={{amount}}
+    value={{value}}
   >
     <view slot="iconInnerLeft">RM</view>
   </f-input>
@@ -67,7 +90,37 @@
     </f-cell-content>
   </f-cell>
 
-  <f-btn onTap="onConfirm">
-    Confirm
-  </f-btn>
+  <f-divider/>
+  <f-cell class="p-16">
+    <f-cell-content>
+      <f-cell-label>
+        CCV: 412
+      </f-cell-label>
+    </f-cell-content>
+  </f-cell>
+
+  <f-divider/>
+  <f-cell class="p-16">
+    <f-cell-content>
+      <f-cell-label>
+        Expiry Date: 11/25
+      </f-cell-label>
+    </f-cell-content>
+  </f-cell>
+
+  <!-- <view>
+    section: {{section}}
+  </view>
+
+  <view>
+    name: {{name}}
+  </view>
+
+  <view>
+    amount: {{amount}}
+  </view> -->
 </view>
+
+<f-btn class="f-btn-bottom" onTap="onConfirm">
+  Confirm
+</f-btn>

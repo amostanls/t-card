@@ -7,6 +7,7 @@
   height: 24px;
   background-image: url('components/fiat/assets/chev-right.svg');
   background-size: cover;
+  /* transform: rotate(90deg); */
 }
 
 .f-cell__action .f-notif.dot {

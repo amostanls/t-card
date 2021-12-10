@@ -2,9 +2,11 @@ import denoms from '/data/denoms'
 
 Page({
   data: {
-    providerName: '',
+    cardName: '',
     amount: "RM 50.00",
     card_number: "4212 1234 5678 0012",
+    card_ccv: "278",
+    card_exp: "09/26",
     helpDialogMessage: `
       Hubungi call center kantor pembiayaan anda.
       Sebutkan nama dan nomor telepon yang terdaftar sebelumnya.
@@ -33,7 +35,7 @@ Page({
   },
 
   onLoad(query) {
-    this.setData({ providerName: query.providerName })
+    this.setData({ cardName: query.cardName })
   },
 
   saveHelpDialogRef(ref) {

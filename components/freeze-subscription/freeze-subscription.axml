@@ -1,0 +1,12 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('provider-select', className) }}">
+  <view class='provider-select__body'>
+    <view class='provider-select__name f-body-16'>{{ title }}</view>
+      <view class="switch-list">
+        <view class="switch-item">
+          <switch onChange="switchChange"/>
+        </view>
+      </view>
+  </view>
+</view>

@@ -3,7 +3,7 @@ Component({
   data: {},
   props: {
     title: "Card Name",
-    providerName: "Provider Name",
+    cardName: "Provider Name",
   },
   didMount() {},
   didUpdate() {},

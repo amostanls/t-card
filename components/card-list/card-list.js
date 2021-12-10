@@ -1,6 +1,8 @@
 Component({
   mixins: [],
-  data: {},
+  data: {
+
+  },
   props: {
     cards: [],
   },
@@ -9,15 +11,15 @@ Component({
   didUnmount() {},
   methods: {
     onCardCellTap (e, props) {
-      const { card } = props
+      const { card } = props;
       my.navigateTo({
-        url: `/pages/provider-select/provider-select?providerName=${card.name || ''}`
-      })
+        url: `/pages/card-select/card-select?cardName=${card.name || ''}`
+      });
     },
     onTapFiatCell () {
       my.navigateTo({ 
         url: '/pages/fiat/index/index'
-      })
+      });
     }
   },
 });

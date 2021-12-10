@@ -2,7 +2,7 @@ Component({
   mixins: [],
   data: {},
   props: {
-    title: "Card Name",
+    title: "Amount",
     providerName: "Provider Name",
   },
   didMount() {},
